@@ -27,7 +27,7 @@ label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 p, dd { /* general text styles */
   font-family: sans-serif;
   text-indent: 20px;
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 125%;
 }
 

@@ -1,1 +1,1 @@
- { "title" : "NM First Report Theme", "creator" : "Timothy Falb", "description" : "standard theme to use for NM First reports", "sample_images" : ["images/pdf1.jpg"], "sample_files" : "" }
+ { "title" : "NM First Report Theme", "creator" : "Timothy Falb", "description" : "standard theme to use for NM First reports", "sample_images" : ["images/pdf1.jpg"], "sample_files" : ["samples/pdf1.pdf"] }

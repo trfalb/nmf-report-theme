@@ -52,11 +52,61 @@
 }
 }
 
-@page chapter:first, 
-@page toc:first, 
-@page appendix:first, 
-@page preface:first, 
+@page chapter:first  {
+ border-top: none;
+  @top-right {
+    content: none;
+  }
+  @top-left {
+   content: none;
+  }
+} 
+@page toc:first  {
+ border-top: none;
+  @top-right {
+    content: none;
+  }
+  @top-left {
+   content: none;
+  }
+} 
+@page appendix:first  {
+ border-top: none;
+  @top-right {
+    content: none;
+  }
+  @top-left {
+   content: none;
+  }
+} 
+@page preface:first  {
+ border-top: none;
+  @top-right {
+    content: none;
+  }
+  @top-left {
+   content: none;
+  }
+} 
 @page foreword:first  {
+ border-top: none;
+  @top-right {
+    content: none;
+  }
+  @top-left {
+   content: none;
+  }
+}
+@page glossary:first  {
+ border-top: none;
+  @top-right {
+    content: none;
+  }
+  @top-left {
+   content: none;
+  }
+}
+@page bibliography:first  {
  border-top: none;
   @top-right {
     content: none;

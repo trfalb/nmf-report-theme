@@ -52,7 +52,11 @@
 }
 }
 
-@page chapter:first, @page toc:first, @page appendix:first, @page preface:first, @page foreword:first  {
+@page chapter:first, 
+@page toc:first, 
+@page appendix:first, 
+@page preface:first, 
+@page foreword:first  {
  border-top: none;
   @top-right {
     content: none;

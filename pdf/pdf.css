@@ -1,9 +1,9 @@
 @page { /* defining overall trim size and page layout */
-  size: 7.39in 9.89in; /* width, height */
-	bleed: 0;
-	marks: none;
-	margin-top:.25in;
-	margin-bottom:.25in;
+ size: 7.39in 9.89in; /* width, height */
+ bleed: 0;
+ marks: none;
+ margin-top:.25in;
+ margin-bottom:.25in;
  border-top: #ccc 1px dotted;
  border-bottom: #ccc 1px dotted;
  padding-top: 15px;
@@ -770,6 +770,7 @@ td, table p { /* table body text */
   font-size: 9pt;
   line-height: 10pt;
   vertical-align: top;
+  text-align: left;
 }
 
 table p { /* table body text */

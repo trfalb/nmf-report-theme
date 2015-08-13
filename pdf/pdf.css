@@ -435,7 +435,7 @@ nav[data-type="toc"] li[data-type="sect2"] a:after {
 
 nav[data-type="toc"] li[data-type="preface"] > a:after,
 nav[data-type="toc"] li[data-type="foreword"] > a:after {
-  content: leader(space) " " target-counter(attr(href, url), page, lower-roman);
+  content: leader(space) " " target-counter(attr(href, url), page);
 }
 
 nav[data-type="toc"] li[data-type="preface"] li[data-type="sect1"],

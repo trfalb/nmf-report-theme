@@ -1553,7 +1553,7 @@ section[data-type="copyright-page"] {
 nav[data-type="toc"] {
   bookmark-level: 1;
   bookmark-state: closed;
-  bookmark-label: "Contents"; 
+  bookmark-label: "Table of Contents"; 
 }
 
 section[data-type="foreword"] {

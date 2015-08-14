@@ -5,7 +5,6 @@
  margin-top:.25in;
  margin-bottom:.25in;
  padding-top: 15px;
- border: #ccc 1px dotted;
  margin-left: .5in;
  margin-right: .5in;
   @bottom-left {
@@ -527,6 +526,7 @@ nav[data-type="toc"] span[data-type="footnote"] {
 
 /* shared styles for all chapter-level headings */
 section[data-type="preface"] > h1,
+nav[data-type="toc"] > h1,
 section[data-type="foreword"] > h1, 
 section[data-type="chapter"] > h1, 
 section[data-type="appendix"] > h1,
@@ -536,10 +536,10 @@ section[data-type="bibliography"] > h1,
 section[data-type="colophon"] h1, 
 section.abouttheauthor h1  {
   font-family: 'SourceSansPro', sans-serif, 'ArialUnicodeMS';
-  line-height: 22pt;
+  line-height: 24pt;
   margin-bottom: 0.9in;
   margin-top: 0.5in;
-  text-align: right;
+  text-align: left;
 }
 
 section[data-type="preface"] > h1 {
@@ -1685,6 +1685,10 @@ section[data-type="sect2"] > h2, h2 {
  font-weight: bold;
  font-family: SourceSansPro, sans-serif, ArialUnicodeMS;
 }
+section[data-type="preface"] > h2 {
+ text-transform: none;
+ }
+ 
 nav[data-type="toc"] > h1, section[data-type="chapter"] > h1, section[data-type="foreword"] > h1, section[data-type="preface"] > h1, section[data-type="appendix"] > h1, section[data-type="glossary"] > h1, section[data-type="bibliography"] > h1   {
  font-size: 24pt;
  text-transform: uppercase;

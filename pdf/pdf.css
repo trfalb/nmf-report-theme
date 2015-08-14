@@ -4,8 +4,6 @@
  marks: none!important;
  margin-top:.25in;
  margin-bottom:.25in;
- border-top: #ccc 1px dotted;
- border-bottom: #ccc 1px dotted;
  padding-top: 15px;
  margin-left: .5in;
  margin-right: .5in;
@@ -16,6 +14,7 @@
     margin-left: 0;
     margin-top: 5pt;
     content: 'New Mexico First © 2014';
+    border-top: #ccc 1px dotted;
   }
   @top-left {
     font-family: SourceSansPro, sans-serif, ArialUnicodeMS;
@@ -25,6 +24,7 @@
     margin-top: 0;
     margin-bottom: 8pt;
     content: '2014 Water Town Hall';
+    border-bottom: #ccc 1px dotted;
   }
   @bottom-right {
     font-family: SourceSansPro, sans-serif, ArialUnicodeMS;
@@ -33,6 +33,7 @@
     margin-right: 0;
     margin-top: 5pt;
     content: counter(page);
+    border-top: #ccc 1px dotted;
   }
   @top-right {
     font-family: SourceSansPro, sans-serif, ArialUnicodeMS;
@@ -42,6 +43,7 @@
     margin-top: 0;
     margin-bottom: 8pt;
     content: string(ChapterTitle);
+    border-bottom: #ccc 1px dotted;
   }
  @footnote {
   margin-top: 0.5em;
@@ -52,6 +54,16 @@
 }
 }
 
+@page glossary {
+	@top-right {
+		content: 'Glossary';
+	}
+}
+@page bibliography {
+	@top-right {
+		content: 'Bibliography';
+	}
+}
 @page chapter:first  {
  border-top: none;
   @top-right {
@@ -253,12 +265,14 @@ section[data-type="titlepage"] p[data-type="author"] {
 section[data-type="copyright-page"] {
   page: blank;
   page-break-after: always;
+  padding-top: 30%;
+  text-align: center;
 }
 
 section[data-type="copyright-page"] h1 {
   font-family: 'SourceSansPro', sans-serif, ArialUnicodeMS;
   font-weight: bold;
-  font-size: 8pt;
+  font-size: 10pt;
   margin: 0;
 }
 
@@ -396,6 +410,7 @@ nav[data-type="toc"] ol { margin-left: 0; }
 nav[data-type="toc"] li[data-type="chapter"],
 nav[data-type="toc"] li[data-type="appendix"],
 nav[data-type="toc"] li[data-type="glossary"],
+nav[data-type="toc"] li[data-type="bibliography"],
 nav[data-type="toc"] li[data-type="index"],
 nav[data-type="toc"] li[data-type="part"] {
   font-family: SourceSansPro-Semibold, sans-serif, ArialUnicodeMS;
@@ -421,6 +436,7 @@ nav[data-type="toc"] li[data-type="chapter"] > a:after,
 nav[data-type="toc"] li[data-type="appendix"] > a:after,
 nav[data-type="toc"] li[data-type="index"] > a:after,
 nav[data-type="toc"] li[data-type="glossary"] > a:after,
+nav[data-type="toc"] li[data-type="bibliography"] > a:after,
 nav[data-type="toc"] li[data-type="part"] > a:after
 /* nav[data-type="toc"] ul li.preface.afterword a:after*/ {
   content: leader(space) " " target-counter(attr(href, url), page);
@@ -507,6 +523,7 @@ section[data-type="chapter"] > h1,
 section[data-type="appendix"] > h1,
 section[data-type="index"] > h1,
 section[data-type="glossary"] > h1,
+section[data-type="bibliography"] > h1,
 section[data-type="colophon"] h1, 
 section.abouttheauthor h1  {
   font-family: 'SourceSansPro', sans-serif, 'ArialUnicodeMS';
@@ -566,7 +583,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-section[data-type="sect1"] > h1 { /* A-level headings */
+section[data-type="sect1"] > h1, section[data-type="preface"] > h2 { /* A-level headings */
   font-family: 'SourceSansPro', sans-serif, 'ArialUnicodeMS';
   font-weight: bold;
   font-size: 12pt;
@@ -599,10 +616,10 @@ section[data-type="sect3"] > h3 { /* C-level headings */
 /* --------------------------- Preface ---------------------------*/
 /* -------------------------------------------------------------- */
 
-section[data-type="preface"] > h1 {
+/* section[data-type="preface"] > h1 {
   font-size: 16pt;
   font-weight: normal;
-}
+}*/
 
 @page preface:first {
  border-top: none;
@@ -624,11 +641,11 @@ section[data-type="preface"] {
 /* --------------------------- Forward ---------------------------*/
 /* -------------------------------------------------------------- */
 
-section[data-type="foreword"] > h1 {
+/*section[data-type="foreword"] > h1 {
   font-size: 16pt;
   font-weight: normal;
 }
-
+*/
 @page foreword:first {
  border-top: none;
   @top-right {
@@ -1166,7 +1183,7 @@ div[data-type="part"].pagenumrestart
 
 section[data-type="appendix"] {
   page: appendix;
-  page-break-before: always; /* forces new chapters to start on a right hand page */
+  page-break-before: always; /* forces new chapters to start on a new page */
   counter-reset: FigureNumber TableNumber ExampleNumber EquationNumber footnote;
 }
 
@@ -1396,6 +1413,10 @@ section[data-type="bibliography"] { page: bibliography }
    content: none;
   }
 }
+ 
+section[data-type="bibliography"] h1 {
+  font-family: SourceSansPro, sans-serif, ArialUnicodeMS;
+} 
   
 section[data-type="bibliography"] p {
  margin-left:.25in;
@@ -1648,13 +1669,14 @@ h1, [data-type="preface"] > h2 {
   color: cmyk(59%,32%,0%,26%); /* set header color to NMF blue*/
 }
 
-section[data-type="sect2"] > h2, section[data-type="preface"] > h2,h2 {
+section[data-type="sect2"] > h2, h2 {
  margin-bottom: 0;
  text-transform: uppercase;
  font-size: 9.5pt;
  font-weight: bold;
+ font-family: SourceSansPro, sans-serif, ArialUnicodeMS;
 }
-section[data-type="chapter"] > h1, section[data-type="foreword"] > h1,[data-type="preface"] > h1, section[data-type="appendix"] > h1, section[data-type="glossary"] > h1, section[data-type="bibliography"] > h1   {
+section[data-type="chapter"] > h1, section[data-type="foreword"] > h1, section[data-type="preface"] > h1, section[data-type="appendix"] > h1, section[data-type="glossary"] > h1, section[data-type="bibliography"] > h1   {
  font-size: 24pt;
  text-transform: uppercase;
  text-align: left;

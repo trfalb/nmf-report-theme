@@ -377,7 +377,7 @@ section[data-type="dedication"].praise blockquote p span.emphasis em {
 
 @page toc {
   @top-right {
-    content: "Contents";
+    content: "Table of Contents";
   }
 }
 
@@ -391,14 +391,6 @@ section[data-type="dedication"].praise blockquote p span.emphasis em {
   }
 }
 
-nav[data-type="toc"] > h1 { /* table of contents heading */
-  font-family: 'SourceSansPro', sans-serif, 'ArialUnicodeMS';
-  font-size: 16pt;
-  line-height: 22pt;
-  margin-top: 87pt;
-  margin-bottom: 77pt;
-  text-align: left;
-}
 
 nav[data-type="toc"] { /* table of contents is a series of nested lists in a nav element */
   page: toc;
@@ -1692,7 +1684,7 @@ section[data-type="sect2"] > h2, h2 {
  font-weight: bold;
  font-family: SourceSansPro, sans-serif, ArialUnicodeMS;
 }
-section[data-type="chapter"] > h1, section[data-type="foreword"] > h1, section[data-type="preface"] > h1, section[data-type="appendix"] > h1, section[data-type="glossary"] > h1, section[data-type="bibliography"] > h1   {
+nav[data-type="toc"] > h1, section[data-type="chapter"] > h1, section[data-type="foreword"] > h1, section[data-type="preface"] > h1, section[data-type="appendix"] > h1, section[data-type="glossary"] > h1, section[data-type="bibliography"] > h1   {
  font-size: 24pt;
  text-transform: uppercase;
  text-align: left;

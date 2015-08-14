@@ -14,7 +14,6 @@
     margin-left: 0;
     margin-top: 5pt;
     content: 'New Mexico First © 2014';
-    border-top: #ccc 1px dotted;
   }
   @top-left {
     font-family: SourceSansPro, sans-serif, ArialUnicodeMS;
@@ -24,7 +23,6 @@
     margin-top: 0;
     margin-bottom: 8pt;
     content: '2014 Water Town Hall';
-    border-bottom: #ccc 1px dotted;
   }
   @bottom-right {
     font-family: SourceSansPro, sans-serif, ArialUnicodeMS;
@@ -33,7 +31,6 @@
     margin-right: 0;
     margin-top: 5pt;
     content: counter(page);
-    border-top: #ccc 1px dotted;
   }
   @top-right {
     font-family: SourceSansPro, sans-serif, ArialUnicodeMS;
@@ -43,7 +40,6 @@
     margin-top: 0;
     margin-bottom: 8pt;
     content: string(ChapterTitle);
-    border-bottom: #ccc 1px dotted;
   }
  @footnote {
   margin-top: 0.5em;

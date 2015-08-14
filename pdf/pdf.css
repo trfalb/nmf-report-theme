@@ -128,6 +128,23 @@
   }
 }
 
+@page blank2  {
+ border-top: none;
+  @top-right {
+    content: none;
+  }
+  @top-left {
+   content: none;
+  }
+  @bottom-right {
+    content: none;
+  }
+  @bottom-left {
+   content: none;
+  }
+}
+
+
 head title { display: none; }
 
 /*cover*/
@@ -153,8 +170,8 @@ body[data-type="book"] > figure[data-type="cover"] + section {
 }
 
 @page :blank { /* defining a truly blank master page */
-  @bottom-left-corner { content: none; }
-  @bottom-right-corner { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
   @top-right { content: none; }
   @top-left { content: none; }
 }
@@ -217,9 +234,9 @@ body[data-type="book"] {
 /* -------------------------------------------------------------- */
 section[data-type="halftitlepage"], 
 section[data-type="titlepage"] {
-  page: blank;
+  page: blank2;
   text-align: right;
-  page-break-before: right; /* titlepages always start on a right-hand page */
+  page-break-before: right; /* titlepages always start on a new page */
   page-break-after: always;
 }
 
@@ -263,10 +280,9 @@ section[data-type="titlepage"] p[data-type="author"] {
 /* ------------------------ Copyright Page -----------------------*/
 /* -------------------------------------------------------------- */
 section[data-type="copyright-page"] {
-  page: blank;
+  page: blank2;
   page-break-after: always;
-  padding-top: 30%;
-  text-align: center;
+  padding-top: 50%;
 }
 
 section[data-type="copyright-page"] h1 {
@@ -293,7 +309,7 @@ section[data-type="copyright-page"] p.isbn {
 section[data-type="dedication"] {
   font-family: 'Crimson-Italic', serif, ArialUnicodeMS;
   font-style: italic;
-  page: blank;
+  page: blank2;
   page-break-after: always;
   text-align: center;
   padding-top: 96pt;
@@ -361,7 +377,7 @@ section[data-type="dedication"].praise blockquote p span.emphasis em {
 
 @page toc {
   @top-right {
-    content: "Table of Contents";
+    content: "Contents";
   }
 }
 
@@ -381,7 +397,7 @@ nav[data-type="toc"] > h1 { /* table of contents heading */
   line-height: 22pt;
   margin-top: 87pt;
   margin-bottom: 77pt;
-  text-align: right;
+  text-align: left;
 }
 
 nav[data-type="toc"] { /* table of contents is a series of nested lists in a nav element */
@@ -1544,7 +1560,7 @@ section[data-type="copyright-page"] {
 nav[data-type="toc"] {
   bookmark-level: 1;
   bookmark-state: closed;
-  bookmark-label: "Table of Contents"; 
+  bookmark-label: "Contents"; 
 }
 
 section[data-type="foreword"] {

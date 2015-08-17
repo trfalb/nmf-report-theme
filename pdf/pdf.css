@@ -533,8 +533,8 @@ section[data-type="colophon"] h1,
 section.abouttheauthor h1  {
   font-family: 'SourceSansPro', sans-serif, 'ArialUnicodeMS';
   line-height: 24pt;
-  margin-bottom: 0.9in;
-  margin-top: 0.5in;
+  margin-bottom: 0.4in;
+  margin-top: 0.25in;
   text-align: left;
 }
 
@@ -935,7 +935,7 @@ aside[data-type="sidebar"] { /* sidebar containers */
   page-break-inside:avoid;
 }
 
-aside[data-type="sidebar"] h2 {
+aside[data-type="sidebar"] h2, aside[data-type="sidebar"] h1 {
  margin-top: 0;
 }
 
@@ -1163,7 +1163,7 @@ section[data-type="appendix"] div[data-type="equation"] h5:before {
 
 section[data-type="chapter"] {
   page: chapter;
-  page-break-before: always; /* forces new chapters to start on a right hand page */
+  page-break-before: always; /* forces new chapters to start on a new page */
   counter-reset: TableNumber FigureNumber ExampleNumber EquationNumber footnote;
 }
 

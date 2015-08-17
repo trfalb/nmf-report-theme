@@ -2,6 +2,8 @@
  size: 7.39in 9.89in; /* width, height */
  bleed: 0;
  marks: none!important;
+ border-top: #ccc 1px dotted;
+ border-bottom: #ccc 1px dotted;
  margin-top:.25in;
  margin-bottom:.25in;
  padding-top: 15px;

@@ -126,6 +126,7 @@
 
 @page blank2  {
  border-top: none;
+ border-bottom: none;
   @top-right {
     content: none;
   }
@@ -232,7 +233,7 @@ section[data-type="halftitlepage"],
 section[data-type="titlepage"] {
   page: blank2;
   text-align: right;
-  page-break-before: right; /* titlepages always start on a new page */
+  page-break-before: always; /* titlepages always start on a new page */
   page-break-after: always;
 }
 

@@ -837,7 +837,7 @@ figure {
 
 figure figcaption {
   display: block;
-  -ah-float: outside page; 
+  -ah-float: left page; 
   clear: both;
   margin-left:0;
   margin-right:0;

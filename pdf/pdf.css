@@ -160,7 +160,7 @@ figure[data-type="cover"] img {
 
 body[data-type="book"] > figure[data-type="cover"] + section {
 	counter-reset: page 1;
-	page-break-before: right;
+	page-break-before: always;
 }
 
 @page cover {
@@ -559,6 +559,24 @@ section[data-type="appendix"] > h1 {
   counter-increment: AppendixNumber;
 }
 
+section.icon-green {
+background: url('../images/icon-green.png') top left no-repeat; 
+padding-top: 60px;
+border-top: #555555 1px solid;
+}
+
+section.icon-red {
+background: url('../images/icon-red.png') top left no-repeat; 
+padding-top: 60px;
+border-top: #555555 1px solid;
+}
+
+section.icon-yellow {
+background: url('../images/icon-green.png') top left no-repeat; 
+padding-top: 60px;
+border-top: #555555 1px solid;
+}
+
 /* chapter and appendix headings include auto-numbering 
 section[data-type="chapter"] > h1:after, 
 section[data-type="appendix"] > h1:after {
@@ -683,7 +701,7 @@ p.byline:before { content: "\2014 " }
 
 div[data-type="part"] {
   page: blank;
-  page-break-before: right;
+  page-break-before: always;
 }
 
 div[data-type="part"] > h1 {

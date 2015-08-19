@@ -560,19 +560,19 @@ section[data-type="appendix"] > h1 {
 }
 
 .icon-green {
-background: url('../images/dot-icon-green.jpg') top left no-repeat; 
+background: url('.../images/dot-icon-green.jpg') top left no-repeat; 
 padding-top: 60px;
 border-top: #555555 1px solid;
 }
 
 section.icon-red {
-background: url('../images/dot-icon-red.jpg') top left no-repeat; 
+background: url('.../images/dot-icon-red.jpg') top left no-repeat; 
 padding-top: 0px;
 border-top: #555555 1px solid;
 }
 
 section.icon-yellow {
-background: url('../images/dot-icon-yellow.jpg') top left no-repeat; 
+background: url('.../images/dot-icon-yellow.jpg') top left no-repeat; 
 padding-top: 60px;
 border-top: #555555 1px solid;
 }

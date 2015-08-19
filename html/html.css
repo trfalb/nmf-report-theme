@@ -273,19 +273,19 @@ section[data-type="sect3"] h3 { /* C-level headings */
   margin-bottom: 10px;
 }
 
-section.icon-green {
+.icon-green {
 background: url('../../images/icon-green.png') top left no-repeat; 
 padding-top: 60px;
 border-top: #555555 1px solid;
 }
 
-section.icon-red {
+.icon-red {
 background: url('../../images/icon-red.png') top left no-repeat; 
 padding-top: 60px;
 border-top: #555555 1px solid;
 }
 
-section.icon-yellow {
+.icon-yellow {
 background: url('../../images/icon-yellow.png') top left no-repeat; 
 padding-top: 60px;
 border-top: #555555 1px solid;

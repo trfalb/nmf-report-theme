@@ -889,20 +889,20 @@ figure img {
   margin: 0 auto;
 }
 
-figure img.ht500 {
-  height:500px;
+figure img.wid90 {
+  width:90%;
 }
-figure img.ht400 {
-  height:400px;
+figure img.wid80 {
+  width:80%;
 }
-figure img.ht300 {
-  height:300px;
+figure img.wid70 {
+  width:70%;
 }
-figure img.ht200 {
-  height:200px;
+figure img.wid60 {
+  width:60%;
 }
-figure img.ht100 {
-  height:100px;
+figure img.wid50 {
+  width:50%;
 }
 
 dt img {

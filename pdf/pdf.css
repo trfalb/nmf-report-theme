@@ -536,7 +536,7 @@ section[data-type="colophon"] h1,
 section.abouttheauthor h1  {
   font-family: 'SourceSansPro', sans-serif, 'ArialUnicodeMS';
   line-height: 24pt;
-  margin-bottom: 0.4in;
+  margin-bottom: 0.2in;
   margin-top: 0.25in;
   text-align: left;
 }
@@ -597,7 +597,7 @@ section[data-type="sect1"] > h1, section[data-type="preface"] > h2 { /* A-level 
   font-size: 12pt;
   line-height: 16pt;
   margin-top: 18pt;
-  margin-bottom: 14pt;
+  margin-bottom: 9pt;
   string-set: SectionTitle self; /* A-heads are also displayed in chapter footers */
 }
 
@@ -607,7 +607,7 @@ section[data-type="sect2"] > h2 { /* B-level headings */
   font-size: 11pt;
   line-height: 12pt;
   margin-top: 18pt;
-  margin-bottom: 13pt;
+  margin-bottom: 8pt;
 }
 
 section[data-type="sect3"] > h3 { /* C-level headings */
@@ -887,6 +887,22 @@ img {
 figure img { 
   max-width: 4.375in;
   margin: 0 auto;
+}
+
+figure img.ht500 {
+  height:500px;
+}
+figure img.ht400 {
+  height:400px;
+}
+figure img.ht300 {
+  height:300px;
+}
+figure img.ht200 {
+  height:200px;
+}
+figure img.ht100 {
+  height:100px;
 }
 
 dt img {

@@ -73,7 +73,7 @@
 } 
 @page toc:first  {
  border-top: none;
- margin-bottom:.35in;
+ padding-bottom:.25in;
 
   @top-right {
     content: none;

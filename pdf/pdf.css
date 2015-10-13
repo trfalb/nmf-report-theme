@@ -417,6 +417,7 @@ nav[data-type="toc"] ol { margin-left: 0; }
 
 /* global styles for the table of contents */
 nav[data-type="toc"] li[data-type="chapter"],
+li[data-type="chapter"],
 nav[data-type="toc"] li[data-type="appendix"],
 nav[data-type="toc"] li[data-type="glossary"],
 nav[data-type="toc"] li[data-type="bibliography"],
@@ -427,7 +428,7 @@ nav[data-type="toc"] li[data-type="part"] {
   font-weight: 600;
   margin-top: 14.4pt;
   display: list-item;
-  page-break-after: avoid;
+/*  page-break-after: avoid;*/
 }
 
 nav[data-type="toc"] li[data-type="part"] {  margin-top: 24.4pt;}

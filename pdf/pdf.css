@@ -417,7 +417,6 @@ nav[data-type="toc"] ol { margin-left: 0; }
 
 /* global styles for the table of contents */
 nav[data-type="toc"] li[data-type="chapter"],
-li[data-type="chapter"],
 nav[data-type="toc"] li[data-type="appendix"],
 nav[data-type="toc"] li[data-type="glossary"],
 nav[data-type="toc"] li[data-type="bibliography"],
@@ -487,7 +486,7 @@ li[data-type="sect1"], li[data-type="sect2"] {
   font-family: SourceSansPro, sans-serif, ArialUnicodeMS;
   font-size: 9.5pt;
   font-weight: normal;
-  page-break-after: auto;
+/*  page-break-after: auto;*/
   margin-bottom: 5pt;
   margin-top: 5pt; /* otherwise, cascades from above */ 
 }

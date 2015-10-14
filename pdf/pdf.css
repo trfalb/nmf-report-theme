@@ -540,7 +540,8 @@ section.abouttheauthor h1  {
   font-family: 'SourceSansPro', sans-serif, 'ArialUnicodeMS';
   line-height: 24pt;
   margin-bottom: 0.2in;
-  margin-top: 0.25in;
+  margin-top: 0;
+/*  margin-top: 0.25in;*/
   text-align: left;
 }
 

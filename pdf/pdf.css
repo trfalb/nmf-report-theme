@@ -1244,6 +1244,9 @@ dt { /* definition list terms */
   margin-top: 7pt;
 }
 
+ul ul {
+	disk-style-type: lower-alpha;
+}
 dd { /* definition list descriptions */
   text-indent: 0;
   margin-left: 0.1667in;
@@ -1547,7 +1550,9 @@ div.comment-identifier {
 	text-align:left;
 }
 
-/* remove <img> and <i> tags */
+/* remove 
+<img> and 
+<i> tags */
 div.comment-identifier img,
 div.comment-identifier i { display: none } 
 

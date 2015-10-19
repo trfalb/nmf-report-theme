@@ -1244,7 +1244,7 @@ dt { /* definition list terms */
   margin-top: 7pt;
 }
 
-ul ul {
+ul li ul {
 	disk-style-type: lower-alpha;
 }
 dd { /* definition list descriptions */
